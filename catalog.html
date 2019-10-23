@@ -42,26 +42,30 @@
       </ul>
       <h1>Сливочное мороженое</h1>
       <form>
-        <label for="sorting-filter-field">Сортировка:</label>
-        <select name="sorting-filter" id="sorting-filter-field">
-          <option value="most-popular">По популярности</option>
-          <option value="lowest-price">сначала недорогие</option>
-          <option value="highest-price">сначала дорогие</option>
-          <option value="most-fat">по жирности</option>
-        </select>
-
-        <label for="price-filter-field">Цена: 100руб. - 500руб.</label>
-        <input type="range" name="price-filter" id="price-filter-field" min="0" max="700">
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select name="sorting-filter" id="sorting-field">
+            <option value="most-popular">По популярности</option>
+            <option value="lowest-price">сначала недорогие</option>
+            <option value="highest-price">сначала дорогие</option>
+            <option value="most-fat">по жирности</option>
+          </select>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Цена: 100руб. - 500руб.</legend>
+          <input type="range" name="price-filter" min="0" max="700">
+        </fieldset>
 
         <fieldset>
           <legend>Жирность:</legend>
-            <input type="radio" name="fat-filter" value="0" id="fat-filter-field-0">
+            <input type="radio" name="fat-filter" value="0" id="fat-filter-0">
             <label for="fat-filter-field-0">0%</label>
-            <input type="radio" name="fat-filter" value="10" id="fat-filter-field-10" checked>
+            <input type="radio" name="fat-filter" value="10" id="fat-filter-10" checked>
             <label for="fat-filter-field-10">до 10%</label>
-            <input type="radio" name="fat-filter" value="30" id="fat-filter-field-30">
+            <input type="radio" name="fat-filter" value="30" id="fat-filter-30">
             <label for="fat-filter-field-30">до 30%</label>
-            <input type="radio" name="fat-filter" value="30plus" id="fat-filter-field-30plus">
+            <input type="radio" name="fat-filter" value="30plus" id="fat-filter-30plus">
             <label for="fat-filter-field-30plus">выше 30%</label>
         </fieldset>
 
@@ -84,7 +88,7 @@
           <label for="jam-filter-field">джемы</label>
         </fieldset>
 
-        <button type="submit"></button>
+        <button type="submit">Применить</button>
       </form>
       <section>
         <h2>Список товаров</h2>
@@ -237,13 +241,13 @@
       </section>
       <div>  <!-- Пагинатор -->
         <ul>
-          <li><img src="img/" width="8" height="12" alt="Кнопка пагинатора назад"></li>
+          <li><a></a></li>
           <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li><img src="img/" width="8" height="12" alt="Кнопка пагинатора вперед"></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <li><a href="">5</a></li>
+          <li><a href=""></a></li>
         </ul>
       </div>
     </main>
